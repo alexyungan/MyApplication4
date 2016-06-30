@@ -5,9 +5,9 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -31,14 +31,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final EditText editMitext=(EditText)findViewById(R.id.editTextHola);
-        Button btnClick= (Button)findViewById(R.id.buttonclickme);
-        final TextView reslNombre=(TextView)findViewById(R.id.textViewnombre);
+        final EditText editMitext = (EditText) findViewById(R.id.editTextHola);
+        Button btnClick = (Button) findViewById(R.id.buttonclickme);
+        final TextView reslNombre = (TextView) findViewById(R.id.textViewnombre);
         btnClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                reslNombre.setText("Nombre :"+editMitext.getText());
-                Toast.makeText(getApplicationContext(),editMitext.getText(),Toast.LENGTH_LONG).show();
+                reslNombre.setText("Nombre :" + editMitext.getText());
+                Toast.makeText(getApplicationContext(), editMitext.getText(), Toast.LENGTH_LONG).show();
 
             }
         });
